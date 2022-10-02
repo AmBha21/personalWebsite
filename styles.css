@@ -12,7 +12,7 @@ body{
 }
 
 .parallax{
-    background-image: url(/images/capital.JPG); 
+    background-image: url(./images/capital.JPG); 
 
     /* background-repeat: no-repeat; */
     /* background-size: contain; */
