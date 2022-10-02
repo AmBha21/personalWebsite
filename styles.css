@@ -2,8 +2,9 @@
 * {
     margin: 0;
     padding:0;
-    border: 1px solid white; 
+    /* border: 1px solid white;  */
     /* background-color: black; */
+    box-sizing: border-box;
 }
 
 body{
@@ -11,7 +12,7 @@ body{
 }
 
 .parallax{
-    background-image: url(/images/2018_07_18-Pentacrest\ Sunset\ Timelapse-ksmurray-0165.jpeg); 
+    background-image: url(/images/capital.JPG); 
 
     /* background-repeat: no-repeat; */
     /* background-size: contain; */
