@@ -2,8 +2,8 @@
 * {
     margin: 0;
     padding:0;
-    /* border: 1px solid pink;  */
-    /* background-color: black; */
+    border: 1px solid pink;
+    background-color: black; 
     box-sizing: border-box;
 }
 
@@ -41,7 +41,7 @@ body{
 /* HEADER */
 header{
     /* background-color: #1F2937; */
-    padding-bottom: 150px;
+    /* padding-bottom: 150px; */
 
 }
 
@@ -141,7 +141,7 @@ header{
     display:flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 50px 0px 50px;
+    padding: 0px 100px 0px 100px;
 }
 
 
@@ -150,10 +150,31 @@ header{
 
 /* about section */
 
-.about{
-    color: white;
-    padding-left: 200px;
-    padding-right: 200px;
+.about_container{
+    flex-direction: column;
+}
+
+.contact_logos{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px 25px 10px;
+}
+
+.fa-linkedin{
+    transform: scale(2);
+    /* border-radius: 50%; */
+    padding-right: 25px;
+}
+
+.fa-github{
+    transform: scale(2);
+    padding-right: 17px;
+}
+.fa-envelope{
+    transform: scale(2);
+    /* padding-right: 25px; */
+
 }
 
 
