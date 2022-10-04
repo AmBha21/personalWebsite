@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding:0;
-    /* border: 1px solid white;  */
+    /* border: 1px solid pink;  */
     /* background-color: black; */
     box-sizing: border-box;
 }
@@ -129,6 +129,25 @@ header{
     color: white;
 }
 
+/* flexing section */
+
+.iowa_logo{
+    max-width: 250px;
+    margin-right: 50px;
+
+}
+
+.logos{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+}
+
+
+
+
+
 /* about section */
 
 .about{
@@ -136,3 +155,6 @@ header{
     padding-left: 200px;
     padding-right: 200px;
 }
+
+
+
