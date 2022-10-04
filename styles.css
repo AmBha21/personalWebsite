@@ -2,8 +2,7 @@
 * {
     margin: 0;
     padding:0;
-    /* border: 1px solid pink;  */
-    /* background-color: black; */
+    border: 1px solid ridge;
     box-sizing: border-box;
 }
 
@@ -47,8 +46,6 @@ header{
 
 .logo{
     font-size: 35px;
-    margin-left: 200px;
-    padding-top: 20px;
     font-weight: 700;
     color: #F9FAF8;
 }
@@ -60,22 +57,25 @@ header{
 /* -------- */
 
 /* Add a black background color to the top navigation */
-.navlist {
-    /* background-color: #333; */
-    overflow: hidden;
-  }
-  
-
 .nav {
     display:flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(49,49,49);
+    height: auto;
+    padding: 15px;
     /* background-image: linear-gradient(to bottom, rgb(0, 115, 255),#02aedc); */
 }
 
 .navlist{
     display: flex;
-    margin-right: 200px;
-    margin-top: 31px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
 }
 
 .navitems{
@@ -85,6 +85,15 @@ header{
     display: flex;    
     gap:20px;
 } 
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    color: skyblue;
+}
 
 /* .between-nav-header{
     /* border-image: linear-gradient(to right, darkblue, darkorchid) 1;; */
