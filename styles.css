@@ -2,8 +2,8 @@
 * {
     margin: 0;
     padding:0;
-    border: 1px solid pink;
-    background-color: black; 
+    /* border: 1px solid red; */
+    /* background-color: black;  */
     box-sizing: border-box;
 }
 
@@ -47,11 +47,15 @@ header{
 
 .logo{
     font-size: 35px;
-    margin-left: 200px;
-    padding-top: 20px;
     font-weight: 700;
     color: #F9FAF8;
 }
+
+
+.body-header2{
+    padding-bottom: 150px;
+}
+
 
 /* NAV */
 
@@ -60,22 +64,26 @@ header{
 /* -------- */
 
 /* Add a black background color to the top navigation */
-.navlist {
-    /* background-color: #333; */
-    overflow: hidden;
-  }
-  
-
 .nav {
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    left: 0;
+    align-items: center;
+    padding: 10px;
+    padding-inline: 20px;
+    background-color: black;
     /* background-image: linear-gradient(to bottom, rgb(0, 115, 255),#02aedc); */
 }
 
 .navlist{
     display: flex;
-    margin-right: 200px;
-    margin-top: 31px;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .navitems{
@@ -85,6 +93,15 @@ header{
     display: flex;    
     gap:20px;
 } 
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    color: skyblue;
+}
 
 /* .between-nav-header{
     /* border-image: linear-gradient(to right, darkblue, darkorchid) 1;; */
@@ -132,7 +149,7 @@ header{
 /* flexing section */
 
 .iowa_logo{
-    max-width: 250px;
+    max-width: 100px;
     margin-right: 50px;
 
 }
@@ -141,7 +158,7 @@ header{
     display:flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 100px 0px 100px;
+    padding: 10px 100px 10px 100px;
 }
 
 
@@ -151,7 +168,8 @@ header{
 /* about section */
 
 .about_container{
-    flex-direction: column;
+    display: flex;
+    padding: 10px 200px 10px 200px;
 }
 
 .contact_logos{
@@ -174,8 +192,101 @@ header{
 .fa-envelope{
     transform: scale(2);
     /* padding-right: 25px; */
+}
 
+.about_words{
+    max-width: 250px;
+    /* height: 250px; */
+    margin-top: 10px;
+}
+
+.about_words1{
+    margin-top: 20px;
+}
+.about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 25px;
+    background-color: grey;
+}
+
+.about_images{
+    border: 5px solid red;
+    margin-right: 50px;
+}
+
+.about_words2{
+    margin-top: 20px;
+    line-height: 30px;
 }
 
 
+/* timeline */
 
+.timeline_sec {
+    background: #009578;
+  }
+  
+  .timeline {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    font-family: "Fira Sans", sans-serif;
+    color: #ffffff;
+  }
+  
+  .timeline__component {
+    margin: 0 20px 20px 20px;
+  }
+  
+  .timeline__component--bg {
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  /* LEAVE TILL LAST */
+  .timeline__component--bottom {
+    margin-bottom: 0;
+  }
+  
+  .timeline__middle {
+    position: relative;
+    background: #ffffff;
+  }
+  
+  .timeline__point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+  
+  /* LEAVE TILL LAST */
+  .timeline__point--bottom {
+    top: initial;
+    bottom: 0;
+  }
+  
+  .timeline__date--right {
+    text-align: right;
+  }
+  
+  .timeline__title {
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+  }
+  
+  .timeline__paragraph {
+    line-height: 1.5;
+  }
+  
