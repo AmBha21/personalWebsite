@@ -148,6 +148,10 @@ header{
 
 /* flexing section */
 
+.flexing{
+    background-color: #ffffff;
+}
+
 .iowa_logo{
     max-width: 100px;
     margin-right: 50px;
@@ -170,6 +174,7 @@ header{
 .about_container{
     display: flex;
     padding: 10px 200px 10px 200px;
+
 }
 
 .contact_logos{
@@ -208,7 +213,7 @@ header{
     justify-content: center;
     align-items: center;
     padding-block: 25px;
-    background-color: grey;
+    background-color: #d3d3d3;
 }
 
 .about_images{
@@ -225,68 +230,152 @@ header{
 /* timeline */
 
 .timeline_sec {
-    background: #009578;
-  }
-  
-  .timeline {
-    margin: 0 auto;
-    max-width: 750px;
-    padding: 25px;
-    display: grid;
-    grid-template-columns: 1fr 3px 1fr;
-    font-family: "Fira Sans", sans-serif;
-    color: #ffffff;
-  }
-  
-  .timeline__component {
-    margin: 0 20px 20px 20px;
-  }
-  
-  .timeline__component--bg {
-    padding: 1.5em;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-  }
-  
-  /* LEAVE TILL LAST */
-  .timeline__component--bottom {
-    margin-bottom: 0;
-  }
-  
-  .timeline__middle {
+    background: #F9FAF8;
+    font-size: 1em;
+    padding-block: 50px;
+}
+
+.timeline {
     position: relative;
-    background: #ffffff;
-  }
-  
-  .timeline__point {
+    max-width: 1200px; /* Restrict the width on large screens */
+    margin: 0 auto; /* Center the content */
+    padding: 30px;
+ }
+
+ .timeline::after {
+    content: '';
     position: absolute;
+    width: 6px;
+    background-color: white;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 15px;
-    height: 15px;
-    background: #ffffff;
-    border-radius: 50%;
-  }
-  
-  /* LEAVE TILL LAST */
-  .timeline__point--bottom {
-    top: initial;
     bottom: 0;
-  }
-  
-  .timeline__date--right {
+    left: 50%;
+    margin-left: -3px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+ }
+
+ .container {
+    position: relative;
+    width: 50%;
+ }
+ .container-left {
+    left: 0;
+ }
+ .container-right {
+    left: 50%;
+ }
+
+ .content {
+    padding: 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+ }
+
+ .container .content::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 40px;
+    width: 0;
+    z-index: 1;
+    border: medium solid white;
+    right: -10px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+ }
+
+ .container .content::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 20px;
+    width: 0;
+    z-index: 1;
+    border: medium solid white;
+ }
+ .container-left .content::before {
+    right: -10px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+ }
+ .container-right .content::before {
+    left: -10px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+ }
+
+ .container-left {
+    /* Existing styles here */
+    padding-right: 70px;
+ }
+ .container-right {
+    /* Existing styles here */
+    padding-left: 70px;
+ }
+
+ .image {
+    width:90px;
+    height:90px;
+    background-size:cover;
+    background-position:center;
+    border:solid 5px #ffffff;
+    border-radius:50%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+ }
+
+ .image {
+    position: absolute;
+ }
+ .container-left .image {
+    right: 0;
+    margin-right: -45px;
+ }
+ .container-right .image {
+    left: 0;
+    margin-left: -45px;
+ }
+
+ .timeline::after {
+    /* Existing styles here */
+    z-index: 1;
+ }
+ .image {
+    /* Existing styles here */
+    z-index: 2;
+ }
+
+ .container {
+    /* Existing styles here */
+    min-height: 120px;
+ }
+
+ .container .content::before {
+    /* Existing styles here */
+    top: 35px;
+ }
+
+ .container-left {
+    /* Existing styles here */
     text-align: right;
-  }
-  
-  .timeline__title {
-    margin: 0;
-    font-size: 1.15em;
+ }
+ .container-right {
+    /* Existing styles here */
+    text-align: left;
+ }
+
+ .content span {
+    color: #2C7A7B;
+    font-size: 1.1em;
     font-weight: bold;
-  }
-  
-  .timeline__paragraph {
-    line-height: 1.5;
-  }
+ }
+ .content h2 {
+    font-size: 1.8em;
+    padding-top: 5px;
+ }
+ .content p {
+    line-height: 1.6;
+    padding-top: 5px;
+ }
   
