@@ -1,53 +1,59 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>AmBha21</title>
-        <script src="https://kit.fontawesome.com/9d97d2b266.js" crossorigin="anonymous"></script>
-
-        <link rel="stylesheet" href="styles.css"/>
-
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
     </head>
 
     <body>
-        <header>
-            <div class="parallax">
+        <header id="navbar">
+        <nav class="navbar-container container">
 
-                <nav>
-                    <div class="navbar">
-                        <!-- <div class="logo"> -->
-                        <h1 class="logo">AMBHA</h1>
-                        <!-- </div> -->
+            <a href="/" class="home-link">
+            <div class="navbar-logo"></div>
+            <h1 class="navbar-text">AMBHA</h1>
+            </a>
 
-                        <div class="menu">
-                            <a href="#" class="is-active">Home</a>
-                            <a href="#">About</a>
-                            <a href="#">Projects</a>
-                            <a href="#">Contact</a>
-                            <!-- <ul class="navitems">
-                                <li class="navinditem"><a href="./pages/about.html">ABOUT</a></li> -->
-                                <!-- <li class="navinditem"><a href="#">ABOUT</a></li> -->
-                                <!-- <li class="navinditem"><a href="#">PROJECTS</a></li> -->
-                                <!-- <li class="navinditem"><a href="#">TIMELINE</a></li> -->
-                                <!-- <li class="navinditem">
-                                    <a href="#"><i class="fa-solid fa-file-pdf"></i>RESUME</a>
-                                </li>
-                                <li class="navinditem"><a href="#">CONTACT</a></li>
-                            </ul> -->
-                        </div>
+            <button
+            type="button"
+            id="navbar-toggle"
+            aria-controls="navbar-menu"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
 
-                        <button id="hamburger" class="hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
-                </nav>
+            <div id="navbar-menu" aria-labelledby="navbar-toggle">
+            <ul class="navbar-links">
+                <li class="navbar-item"><a class="navbar-link" href="/about">Home</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="/blog">About</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="/careers">Projects</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="/contact">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+        </header>
+
+        <!-- ABOUT SECTION -->
+
+        <section class="about">
+            <div class="about-bg"></div>
+        </section>
+
+
+
+    <script src="index.js"></script>
+    </body>
+</html>
 
             <!-- <div class="between-nav-header">
             </div> -->
-
+            <!-- <div>
                 <div class="container-flex profile-image-div">
                     <img class="profile-pic" src="./images/IMG_4183_Original.png" >
                 </div>
@@ -60,7 +66,7 @@
                     </h3>
                 </div>
             </div>
-        </header>
+
 
         <section class="flexing">
             <div class="logos">
@@ -74,10 +80,10 @@
                     <img src="./images/stanfordoto.png" class="iowa_logo">
                 </a>
             </div>
-        </section>
+        </section> -->
 
 <!-- About section -->
-            <section class="about">
+            <!-- <section class="about">
                 <div class="about_container">
                     <div class=about_images>
                         <img class="profile-pic" src="./images/bridge.png" >
@@ -111,10 +117,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
 <!-- Timeline section -->
-            <section class="timeline_sec">
+            <!-- <section class="timeline_sec">
                 <div class="timeline">
                     <div class="container container-left">
                         <div class="image" style="background-image:url('./images/stanfordoto.png')"></div>
@@ -153,6 +159,6 @@
                 </div>
             </section>
 
-        <script src="index.js"></script>
-    </body>
-</html>
+        <script src="index.js"></script>-->
+    <!-- </body>
+</html>  -->

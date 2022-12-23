@@ -1,0 +1,350 @@
+
+
+/* background-image: linear-gradient(90deg,#f85d7f,#e100ff 36%,#6b81fa 68%,#a0fbcd); */
+* {
+    margin: 0;
+    padding:0;
+    /* border: 1px solid red; */
+    /* background-color: black;  */
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+/* body{
+    font-family: "Roboto", sans-serif;
+} */
+
+.parallax{
+    /* background-image: url(./images/capital.JPG);  */
+
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    /* /* background-size: cover;
+    max-width:100%; */
+    height:100vh;     
+    /* height: 100%;
+    object-fit: contain; */
+    /* image-rendering: auto; */
+
+
+
+    /* Create the parallax scrolling effect */
+
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* image-rendering: auto; */
+    /* height: fit-content;
+    width: fit-content; */
+}
+
+/* HEADER */
+header{
+    /* background-color: #1F2937; */
+    /* padding-bottom: 150px; */
+
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #F9FAF8;
+}
+
+
+.body-header2{
+    padding-bottom: 150px;
+}
+
+
+/* NAV */
+
+/* Add a black background color to the top navigation */
+
+
+
+.image-div{
+    padding-top: 150px;
+}
+
+.container-flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 100px;
+    /* background: linear-gradient(); */
+}
+
+.profile-pic {
+    width: 350px;
+    height: 350px;
+    border: 10px solid white;
+    /* border-image: linear-gradient(to right, darkblue, darkorchid) 1; */
+    object-fit: cover;
+    /* margin-left: auto; */
+    border-radius: 50%;
+}
+
+.body-header1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: white;
+}
+
+.body-header2{
+    margin-block: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+/* flexing section */
+
+.flexing{
+    background-color: #ffffff;
+}
+
+.iowa_logo{
+    max-width: 100px;
+    margin-right: 50px;
+
+}
+
+.logos{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 100px 10px 100px;
+}
+
+
+
+
+
+/* about section */
+
+.about_container{
+    display: flex;
+    padding: 10px 200px 10px 200px;
+
+}
+
+.contact_logos{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px 25px 10px;
+}
+
+.fa-linkedin{
+    transform: scale(2);
+    /* border-radius: 50%; */
+    padding-right: 25px;
+}
+
+.fa-github{
+    transform: scale(2);
+    padding-right: 17px;
+}
+.fa-envelope{
+    transform: scale(2);
+    /* padding-right: 25px; */
+}
+
+.about_name{
+    font-size: 25px;
+}
+.about_words{
+    /* max-width: 350px; */
+    /* height: 250px; */
+    margin-top: 10px;
+}
+
+.about_h5{
+    font-weight: 10;
+    font-size: 17px;
+}
+
+.about_words1{
+    margin-top: 20px;
+}
+.about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 25px;
+    background-color: #d3d3d3;
+}
+
+.about_images{
+    border: 5px solid red;
+    margin-right: 50px;
+}
+
+.about_words2{
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+
+/* timeline */
+
+.timeline_sec {
+    background: #F9FAF8;
+    font-size: 1em;
+    padding-block: 50px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px; /* Restrict the width on large screens */
+    margin: 0 auto; /* Center the content */
+    padding: 30px;
+ }
+
+ .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+ }
+
+ .container {
+    position: relative;
+    width: 50%;
+ }
+ .container-left {
+    left: 0;
+ }
+ .container-right {
+    left: 50%;
+ }
+
+ .content {
+    padding: 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+ }
+
+ .container .content::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 40px;
+    width: 0;
+    z-index: 1;
+    border: medium solid white;
+    right: -10px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+ }
+
+ .container .content::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 20px;
+    width: 0;
+    z-index: 1;
+    border: medium solid white;
+ }
+ .container-left .content::before {
+    right: -10px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+ }
+ .container-right .content::before {
+    left: -10px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+ }
+
+ .container-left {
+    /* Existing styles here */
+    padding-right: 70px;
+ }
+ .container-right {
+    /* Existing styles here */
+    padding-left: 70px;
+ }
+
+ .image {
+    width:90px;
+    height:90px;
+    background-size:cover;
+    background-position:center;
+    border:solid 5px #ffffff;
+    border-radius:50%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+ }
+
+ .image {
+    position: absolute;
+ }
+ .container-left .image {
+    right: 0;
+    margin-right: -45px;
+ }
+ .container-right .image {
+    left: 0;
+    margin-left: -45px;
+ }
+
+ .timeline::after {
+    /* Existing styles here */
+    z-index: 1;
+ }
+ .image {
+    /* Existing styles here */
+    z-index: 2;
+ }
+
+ .container {
+    /* Existing styles here */
+    min-height: 120px;
+ }
+
+ .container .content::before {
+    /* Existing styles here */
+    top: 35px;
+ }
+
+ .container-left {
+    /* Existing styles here */
+    text-align: right;
+ }
+ .container-right {
+    /* Existing styles here */
+    text-align: left;
+ }
+
+ .content span {
+    color: #2C7A7B;
+    font-size: 1.1em;
+    font-weight: bold;
+ }
+ .content h2 {
+    font-size: 1.8em;
+    padding-top: 5px;
+ }
+ .content p {
+    line-height: 1.6;
+    padding-top: 5px;
+ }
+  

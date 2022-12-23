@@ -1,16 +1,14 @@
-// hamburger animation
-const hamburger = document.querySelector( '.hamburger');
+const navbarToggle = navbar.querySelector("#navbar-toggle");
+const navbarMenu = document.querySelector("#navbar-menu");
+const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
 
-hamburger.addEventListener('click' , function (){
-    this.classList.toggle('is-active');
-});
+const toggleNavbarVisibility = () => {
+  isNavbarExpanded = !isNavbarExpanded;
+  navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+};
 
-document.getElementById('hamburger').addEventListener('click', toggleMenu);
+navbarToggle.addEventListener("click", toggleNavbarVisibility);
 
-function toggleMenu() {
-    var menu = document.querySelector('.menu');
-    menu.classList.toggle('is-active');
-  }
-// hamburger.addEventListener('click', function (){
-//     menu.classList.toggle('show');
-// });
+navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+navbarMenu.addEventListener("click", toggleNavbarVisibility);
