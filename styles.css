@@ -190,9 +190,12 @@ body {
 
 
 .about-bg{
-    background-image: url(./images/mountains_front.png);
+    background-image: url(./images/mountains_front.png),url(./images/mountains_behind.png),url(./images/stars.png),url(./images/moon.png),linear-gradient(to bottom, black, purple);
+    background-size: cover;
     height: 1000px;
 }
+
+
 
 
 
