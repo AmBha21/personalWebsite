@@ -33,6 +33,7 @@ body {
     left: 0;
     right: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    z-index: 99;
 }
 
 .navbar-container {
@@ -192,8 +193,10 @@ body {
 .about-bg{
     background-image: url(./images/mountains_front.png),url(./images/mountains_behind.png),url(./images/stars.png),url(./images/moon.png),linear-gradient(to bottom, black, purple);
     background-size: cover;
-    height: 1000px;
+    height: 150vh;
+    background-repeat: no-repeat;
 }
+
 
 
 

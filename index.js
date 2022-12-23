@@ -13,9 +13,3 @@ navbarToggle.addEventListener("click", toggleNavbarVisibility);
 navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
 navbarMenu.addEventListener("click", toggleNavbarVisibility);
 
-const moon = document.querySelector('.moon');
-
-window.addEventListener('scroll', () => {
-  const scrollPos = window.pageYOffset;
-  moon.style.backgroundPositionY = -scrollPos * 0.7 + 'px';
-});
